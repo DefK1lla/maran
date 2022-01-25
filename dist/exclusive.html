@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container-lg">
+                <div class="header__inner">
+                    <div class="header__col">
+                        <a class="header__logo" href="/maran/dist/index.html">
+                            <img class="header__logo-img" src="images/logo.png" alt="logo">
+                        </a>
+                        <div class="lang">
+                            <div class="lang__select">
+                                <div class="lang__head">
+                                    <img class="lang__icon" src="images/icons/lang.svg" alt="">
+                                </div>
+                                <div class="lang__body">
+                                    <div class="lang__option lang__option--active">
+                                        Русский
+                                    </div>
+                                    <div class="lang__option">
+                                        English
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- /.header__col -->
+                    <div class="header__col">
+                        <div class="header__menu">
+                            <button class="menu-btn">
+                                <span class="menu-line">menu</span>
+                            </button>
+                            <nav class="menu">
+                                <ul class="menu__list">
+                                    <li class="menu__search">
+                                        <button class="menu__search-btn">
+                                            <img class="menu__search-icon" src="images/icons/search-black.svg" alt="">
+                                        </button>
+                                        <input class="menu__input" type="text" name="search"
+                                            placeholder="Поиск по сайту">
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="/maran/dist/sport.html">Спорт</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="/maran/dist/live.html">Live</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="/maran/dist/crypto.html">Крипто ставки</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="/maran/dist/cybersport.html">Кибер-спорт</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="/maran/dist/exclusive.html">Эксклюзивные пари</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="/maran/dist/token.html">MARAN токен</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="/maran/dist/results.html">Результаты</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div> <!-- /.header__col -->
+                    <div class="header__col">
+                        <a class="header__user" href="/maran/dist/account.html">
+                            <span class="header__username">
+                                78 MARAN
+                            </span>
+                            <img class="header__user-img" src="images/icons/profile.svg" alt="">
+                        </a>
+                        <a class="header__search" href="#">
+                            <img class="header__search-icon" src="images/icons/search.svg" alt="">
+                        </a>
+                    </div> <!-- /.header__col -->
+                </div>
+            </div> <!-- /.container -->
+        </header>
+        <main class="main">
+            <div class="exclusive-page">
+                <div class="exclusive">
+                    <div class="container-lg">
+                        <div class="exclusive__inner page-inner">
+                            <h2 class="exclusive__title page-title title">
+                                Эксклюзивные пари
+                            </h2>
+                            <div class="date-search">
+                                <div class="date-search__group">
+                                    <button class="date-search__submit">
+                                        <img class="date-search__date-icon" src="images/icons/search-black.svg" alt="">
+                                    </button>
+                                    <input class="date-search__control" name="search" type="text"
+                                        placeholder="Поиск событий и турниров">
+                                    <button class="date-search__date date">
+                                        <img class="date-search__date-icon" src="images/icons/cal.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="tabs">
+                                <div class="tabs__nav">
+                                    <button class="tabs__btn tabs-btn active" data-tab="#all">
+                                        Все
+                                    </button>
+                                    <button class="tabs__btn tabs-btn" data-tab="#live">
+                                        Live
+                                    </button>
+                                    <button class="tabs__btn tabs-btn" data-tab="#popular">
+                                        Популярные События
+                                    </button>
+                                </div>
+                                <div class="tabs__content">
+                                    <div class="tabs__body tabs-body active" id="all">
+                                        <div class="bets">
+                                            <div class="bets__head accardeon-btn">
+                                                <div class="bets__type">
+                                                    <img class="bets__icon" src="images/sports/exclusive.svg" alt="">
+                                                    <span class="bets__name">Эксклюзивные пари</span>
+                                                </div>
+                                                <div class="bets__tournament">
+                                                    <div class="bets__tournament-name">
+                                                        Team SMG выйдет в финал
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bets__body accardeon-body">
+                                                <div class="bets__table">
+                                                    <div class="bets__game">
+                                                        <div class="bets__info">
+                                                            <button class="bets__btn">
+                                                                <img class="bets__btn-icon" src="images/icons/star.svg"
+                                                                    alt="">
+                                                            </button>
+                                                            <div class="bets__info-content">
+                                                                <span class="bets__date">6 июля, 20:00</span>
+                                                                <div class="bets__players">
+                                                                    Team SMG
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="bets__results bets__results--col">
+                                                            <div class="bets__res bets__res--row">
+                                                                <div class="bets__win">
+                                                                    Победа
+                                                                </div>
+                                                                <div class="bets__win bets__win-sm">
+                                                                    В
+                                                                </div>
+                                                                <div class="bets__coefficient">
+                                                                    1.3
+                                                                </div>
+                                                            </div>
+                                                            <div class="bets__res bets__res--row">
+                                                                <div class="bets__lose">
+                                                                    Поражение
+                                                                </div>
+                                                                <div class="bets__win bets__win-sm">
+                                                                    П
+                                                                </div>
+                                                                <div class="bets__coefficient">
+                                                                    1.3
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> <!-- /.bets__table -->
+                                                <div class="pagination">
+                                                    <p class="pagination__text">
+                                                        Показать еще
+                                                    </p>
+                                                    <div class="pagination__btns">
+                                                        <button class="pagination__num">
+                                                            10
+                                                        </button>
+                                                        <button class="pagination__num">
+                                                            20
+                                                        </button>
+                                                        <button class="pagination__num">
+                                                            50
+                                                        </button>
+                                                        <button class="pagination__num">
+                                                            100
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> <!-- /.bets -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </main>
+        <footer class="footer">
+            <div class="container-lg">
+                <div class="footer__inner">
+                    <div class="footer__row">
+                        <div class="footer__col">
+                            <h6 class="footer__title">
+                                Скачайте приложение
+                            </h6>
+                            <div class="footer__apps">
+                                <a class="footer__app-link" href="#">
+                                    <img class="footer__img" src="images/footer/g-play.svg" alt="">
+                                </a>
+                                <a class="footer__app-link" href="#">
+                                    <img class="footer__img" src="images/footer/app-store.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="footer__lg">
+                                <a class="footer__email" href="mailto:info@maranbet.com ">info@maranbet.com</a>
+                                <p class="footer__copy">
+                                    © MARAN Global INC. 2021
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer__col">
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">О компании</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Контакты</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Правила игры</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Акции</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">SWAP</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Политика Конфиденциальности</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Условия Использования</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Как получить MARAN?</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__col">
+                            <h6 class="footer__title footer__title--right">
+                                Мы в социальных сетях
+                            </h6>
+                            <ul class="footer__soc">
+                                <li class="footer__soc-item">
+                                    <a class="footer__soc-link" href="#">
+                                        <img src="images/icons/twitter.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="footer__soc-item">
+                                    <a class="footer__soc-link" href="#">
+                                        <img src="images/icons/fb.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="footer__soc-item">
+                                    <a class="footer__soc-link" href="#">
+                                        <img src="images/icons/insta.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="footer__soc-item">
+                                    <a class="footer__soc-link" href="#">
+                                        <img src="images/icons/tg.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="footer__soc-item">
+                                    <a class="footer__soc-link" href="#">
+                                        <img src="images/icons/medium.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__sm">
+                        <p class="footer__copy">
+                            © MARAN Global INC. 2021
+                        </p>
+                        <a class="footer__email" href="mailto:info@maranbet.com ">info@maranbet.com</a>
+                    </div>
+                </div>
+            </div> <!-- /.container -->
+        </footer>
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
