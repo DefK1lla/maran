@@ -1,0 +1,319 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/**
+ * EasyCalendar jQuery Plugin https://github.com/brainygen/easyCalendar
+ * Версия - 1.0 
+ * 
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2016 Dmitrii Shelik
+ */
+.calendar {
+    position: absolute;
+    z-index: 2;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    padding: 15px 20px;
+    background: $black;
+    display: none;
+    visibility: hidden;
+}
+
+.calendar table {
+    border-collapse: collapse;
+    border-radius: 3px;
+
+}
+
+.calendar__day {
+    width: 18px;
+    height: 18px;
+    background: $black;
+    color: $white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 10px;
+
+    border-radius: 3px;
+}
+
+.calendar__day:hover {
+    background: $white;
+    color: $black;
+}
+
+.calendar__day[disabled]:hover {
+    background: $black;
+}
+
+.calendar__week {
+    width: 18px;
+    height: 18px;
+    background: $black;
+    color: $white;
+    text-align: center;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 5px;
+    display: none;
+}
+
+.calendar__week-free {
+    color: $white;
+}
+
+.calendar__year {
+    background: $black;
+    color: $white;
+    text-align: center;
+    font-size: 13px;
+}
+
+.calendar__day-free {
+    color: $white;
+}
+
+.calendar__prev {
+    width: 10px;
+    height: 16px;
+    margin: 0 6px;
+    cursor: pointer;
+    background-image: url(../images/icons/cal-prev.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.calendar__next {
+    width: 10px;
+    height: 16px;
+    margin: 0 6px;
+    cursor: pointer;
+    background-image: url(../images/icons/cal-next.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*.calendar__tail {
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    background: rgba(0, 0, 0, .1);
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(50%, rgba(0, 0, 0, .1)), color-stop(50%, rgba(0, 0, 0, 0)));
+    background: -webkit-linear-gradient(bottom left, rgba(0, 0, 0, .1)50%, rgba(0, 0, 0, 0)50%);
+    background: linear-gradient(to top right, rgba(0, 0, 0, .1)50%, rgba(0, 0, 0, 0)50%);
+    position: absolute;
+    z-index: 9;
+    display: block;
+    width: 17px;
+    height: 17px;
+    font: 0/0 a;
+    top: -17px;
+    left: 0px;
+}
+
+.calendar__tail:after {
+    position: absolute;
+    bottom: 1px;
+    left: 1px;
+    width: 17px;
+    height: 17px;
+    content: '';
+    background: #fff;
+}*/
+
+.calendar__inited {
+    display: block;
+    visibility: hidden;
+    margin: 0;
+}
+
+.calendar__show {
+    display: block;
+    visibility: visible;
+}
+
+.calendar__item-today {
+    font-weight: 600;
+}
+
+.calendar__item-current {
+    background: $yellow;
+    color: $black;
+
+    pointer-events: none;
+}

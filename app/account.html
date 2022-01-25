@@ -1,0 +1,1774 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Личный кабинет</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container-lg">
+                <div class="header__inner">
+                    <div class="header__col">
+                        <a class="header__logo" href="/maran/dist/index.html">
+                            <img class="header__logo-img" src="images/logo.png" alt="logo">
+                        </a>
+                        <div class="lang">
+                            <div class="lang__select">
+                                <div class="lang__head">
+                                    <img class="lang__icon" src="images/icons/lang.svg" alt="">
+                                </div>
+                                <div class="lang__body">
+                                    <div class="lang__option lang__option--active">
+                                        Русский
+                                    </div>
+                                    <div class="lang__option">
+                                        English
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- /.header__col -->
+                    <div class="header__col">
+                        <div class="header__menu">
+                            <button class="menu-btn">
+                                <span class="menu-line">menu</span>
+                            </button>
+                            <nav class="menu">
+                                <ul class="menu__list">
+                                    <li class="menu__search">
+                                        <button class="menu__search-btn">
+                                            <img class="menu__search-icon" src="images/icons/search-black.svg" alt="">
+                                        </button>
+                                        <input class="menu__input" type="text" name="search"
+                                            placeholder="Поиск по сайту">
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="/maran/dist/sport.html">Спорт</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="/maran/dist/live.html">Live</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="/maran/dist/crypto.html">Крипто ставки</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="/maran/dist/cybersport.html">Кибер-спорт</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="/maran/dist/exclusive.html">Эксклюзивные пари</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="/maran/dist/token.html">MARAN токен</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="/maran/dist/results.html">Результаты</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div> <!-- /.header__col -->
+                    <div class="header__col">
+                        <a class="header__user" href="/maran/dist/account.html">
+                            <span class="header__username">
+                                78 MARAN
+                            </span>
+                            <img class="header__user-img" src="images/icons/profile.svg" alt="">
+                        </a>
+                        <a class="header__search" href="#">
+                            <img class="header__search-icon" src="images/icons/search.svg" alt="">
+                        </a>
+                    </div> <!-- /.header__col -->
+                </div>
+            </div> <!-- /.container -->
+        </header>
+        <main class="main">
+            <div class="account-page">
+                <div class="account">
+                    <div class="container-lg">
+                        <div class="account__inner">
+                            <div class="account__name">
+                                Мария
+                            </div>
+                            <div class="account__balance">
+                                <span class="account__money">
+                                    0,00
+                                </span>
+                                <sup class="account__currency">
+                                    MARAN
+                                </sup>
+                            </div>
+                            <div class="account__tabs tabs">
+                                <aside class="account__sidebar scroll">
+                                    <button class="account__tabs-btn tabs-btn active" data-tab="#profile">
+                                        <img class="account__tabs-icon" src="images/icons/profile-dark.svg" alt="">
+                                        Мой Профиль
+                                    </button>
+                                    <button class="account__tabs-btn tabs-btn" data-tab="#transaction">
+                                        <img class="account__tabs-icon" src="images/icons/money.svg" alt="">
+                                        Пополнение и вывод средств
+                                    </button>
+                                    <button class="account__tabs-btn tabs-btn" data-tab="#history">
+                                        <img class="account__tabs-icon" src="images/icons/history.svg" alt="">
+                                        История
+                                    </button>
+                                    <button class="account__tabs-btn tabs-btn" data-tab="#bonus">
+                                        <img class="account__tabs-icon" src="images/icons/bonus.svg" alt="">
+                                        Бонусы и акции
+                                    </button>
+                                    <button class="account__tabs-btn tabs-btn" data-tab="#favorites">
+                                        <img class="account__tabs-icon" src="images/icons/star-dark.svg" alt="">
+                                        Избранное
+                                    </button>
+                                    <button class="account__exit">
+                                        <img class="account__tabs-icon" src="images/icons/exit.svg" alt="">
+                                        Выход
+                                    </button>
+                                </aside>
+                                <div class="account__content">
+                                    <div class="profile tabs-body active" id="profile">
+                                        <h5 class="account__title">
+                                            Мой Профиль
+                                        </h5>
+                                        <div class="tabs">
+                                            <div class="tabs__nav">
+                                                <button class="tabs__btn tabs-btn active" data-tab="#mainData">
+                                                    Основные данные
+                                                </button>
+                                                <button class="tabs__btn tabs-btn" data-tab="#changePassword">
+                                                    Смена пароля
+                                                </button>
+                                                <button class="tabs__btn tabs-btn" data-tab="#getKey">
+                                                    Получить закрытый ключ
+                                                </button>
+                                            </div>
+                                            <div class="tabs__content">
+                                                <div class="tabs__body tabs-body active" id="mainData">
+                                                    <div class="account__data">
+                                                        <div class="account__head">
+                                                            Основные данные
+                                                        </div>
+                                                        <h6 class="profile__title">
+                                                            ЛИЧНЫЕ ДАННЫЕ
+                                                        </h6>
+                                                        <div class="account__group">
+                                                            <label class="account__label" for="name">
+                                                                Имя
+                                                            </label>
+                                                            <label class="account__placeholder placeholder active">
+                                                                Мария
+                                                            </label>
+                                                            <input class="account__input input" type="text" id="name"
+                                                                name="name" value="Мария">
+                                                            <button class="account__edit edit active"
+                                                                title="Редактировать">
+                                                                <img class="account__edit-icon"
+                                                                    src="images/icons/edit.svg" alt="">
+                                                            </button>
+                                                            <button class="account__save save">
+                                                                Изменить
+                                                            </button>
+                                                        </div>
+                                                        <div class="account__group">
+                                                            <label class="account__label">
+                                                                Адрес криптокошелька
+                                                            </label>
+                                                            <label class="account__wallet copy-text">
+                                                                0x8f9239100B934e76C5be943A09512a2D3eEc5dB5
+                                                            </label>
+                                                            <button class="account__copy copy" title="Копировать">
+                                                                <img class="account__copy-icon"
+                                                                    src="images/icons/copy.svg" alt="">
+                                                            </button>
+                                                        </div>
+                                                        <div class="account__group">
+                                                            <label class="account__label">
+                                                                Номер счета
+                                                            </label>
+                                                            <label class="account__placeholder">
+                                                                12312312314
+                                                            </label>
+                                                        </div>
+                                                        <div class="account__group">
+                                                            <label class="account__label">
+                                                                Дата регистрации
+                                                            </label>
+                                                            <label class="account__placeholder">
+                                                                12 марта, 2021
+                                                            </label>
+                                                        </div>
+                                                        <div class="account__group">
+                                                            <label class="account__label">
+                                                                Реферальный ID
+                                                            </label>
+                                                            <label class="account__placeholder">
+                                                                12345
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="account__contacts">
+                                                        <h6 class="profile__title">
+                                                            КОНТАКТЫ
+                                                        </h6>
+                                                        <div class="account__group">
+                                                            <label class="account__label" for="phone">
+                                                                Телефон
+                                                            </label>
+                                                            <label class="account__placeholder placeholder active">
+                                                                +7 921 044-02-71
+                                                            </label>
+                                                            <input class="account__input input" type="tel" id="phone"
+                                                                name="phone" value="+7 921 044-02-71">
+                                                            <button class="account__edit edit active"
+                                                                title="Редактировать">
+                                                                <img class="account__edit-icon"
+                                                                    src="images/icons/edit.svg" alt="">
+                                                            </button>
+                                                            <button class="account__save save">
+                                                                Изменить
+                                                            </button>
+                                                        </div>
+                                                        <div class="account__group">
+                                                            <label class="account__label" for="email">
+                                                                Email
+                                                            </label>
+                                                            <label class="account__placeholder placeholder active">
+                                                                Email не задан
+                                                            </label>
+                                                            <input class="account__input input" type="tel" id="email"
+                                                                name="email" value="" placeholder="Введите Email">
+                                                            <button class="account__edit edit active"
+                                                                title="Редактировать">
+                                                                <img class="account__edit-icon"
+                                                                    src="images/icons/edit.svg" alt="">
+                                                            </button>
+                                                            <button class="account__save save">
+                                                                Изменить
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tabs__body tabs-body" id="changePassword">
+                                                    <div class="account__incorrect-password">
+                                                        Неверный старый пароль! Повторите вновь
+                                                    </div>
+                                                    <div class="account__password">
+                                                        <div class="account__head">
+                                                            Смена пароля
+                                                        </div>
+                                                        <h6 class="profile__title">
+                                                            ПАРОЛЬ
+                                                        </h6>
+                                                        <div class="account__group">
+                                                            <label class="account__label" for="oldPass">
+                                                                Старый пароль
+                                                            </label>
+                                                            <label class="account__placeholder placeholder active">
+                                                                Введите старый пароль
+                                                            </label>
+                                                            <input class="account__input input" type="password"
+                                                                id="oldPass" name="oldPass" value=""
+                                                                placeholder="Введите старый пароль">
+                                                            <button class="account__edit edit active"
+                                                                title="Редактировать">
+                                                                <img class="account__edit-icon"
+                                                                    src="images/icons/edit.svg" alt="">
+                                                            </button>
+                                                        </div>
+                                                        <div class="account__group">
+                                                            <label class="account__label" for="newPass">
+                                                                Старый пароль
+                                                            </label>
+                                                            <label class="account__placeholder placeholder active">
+                                                                Введите старый пароль
+                                                            </label>
+                                                            <input class="account__input input" type="password"
+                                                                id="newPass" name="newPass" value=""
+                                                                placeholder="Введите новый пароль">
+                                                            <button class="account__edit edit active"
+                                                                title="Редактировать">
+                                                                <img class="account__edit-icon"
+                                                                    src="images/icons/edit.svg" alt="">
+                                                            </button>
+                                                            <button class="account__save save">
+                                                                Сменить пароль
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tabs__body tabs-body" id="getKey">
+                                                    <div class="account__key">
+                                                        <div class="account__head">
+                                                            Получить закрытый ключ
+                                                        </div>
+                                                        <button class="account__key-btn generate-key active">
+                                                            Сгенерировать закрытый ключ
+                                                        </button>
+                                                        <div class="mnemokey">
+                                                            <div class="mnemokey__group">
+                                                                <div class="mnemokey__num">1</div>
+                                                                <div class="mnemokey__field">
+                                                                    <p class="mnemokey__text">
+                                                                        oval
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mnemokey__group">
+                                                                <div class="mnemokey__num">2</div>
+                                                                <div class="mnemokey__field">
+                                                                    <p class="mnemokey__text">
+                                                                        oval
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mnemokey__group">
+                                                                <div class="mnemokey__num">3</div>
+                                                                <div class="mnemokey__field">
+                                                                    <p class="mnemokey__text">
+                                                                        oval
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mnemokey__group">
+                                                                <div class="mnemokey__num">4</div>
+                                                                <div class="mnemokey__field">
+                                                                    <p class="mnemokey__text">
+                                                                        oval
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mnemokey__group">
+                                                                <div class="mnemokey__num">5</div>
+                                                                <div class="mnemokey__field">
+                                                                    <p class="mnemokey__text">
+                                                                        oval
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mnemokey__group">
+                                                                <div class="mnemokey__num">6</div>
+                                                                <div class="mnemokey__field">
+                                                                    <p class="mnemokey__text">
+                                                                        oval
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mnemokey__group">
+                                                                <div class="mnemokey__num">7</div>
+                                                                <div class="mnemokey__field">
+                                                                    <p class="mnemokey__text">
+                                                                        oval
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mnemokey__group">
+                                                                <div class="mnemokey__num">8</div>
+                                                                <div class="mnemokey__field">
+                                                                    <p class="mnemokey__text">
+                                                                        oval
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mnemokey__group">
+                                                                <div class="mnemokey__num">9</div>
+                                                                <div class="mnemokey__field">
+                                                                    <p class="mnemokey__text">
+                                                                        oval
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mnemokey__group">
+                                                                <div class="mnemokey__num">10</div>
+                                                                <div class="mnemokey__field">
+                                                                    <p class="mnemokey__text">
+                                                                        oval
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mnemokey__group">
+                                                                <div class="mnemokey__num">11</div>
+                                                                <div class="mnemokey__field">
+                                                                    <p class="mnemokey__text">
+                                                                        oval
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mnemokey__group">
+                                                                <div class="mnemokey__num">12</div>
+                                                                <div class="mnemokey__field">
+                                                                    <p class="mnemokey__text">
+                                                                        oval
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="account__warning">
+                                                            Сохраните этот закрытый ключ в надежном месте. Он
+                                                            понадобится вам для вывода средств, восстановления аккаунта.
+                                                            Данная мнемоническая фраза защитит вас от взлома, поскольку
+                                                            потребуется более тысячи лет для ее подбора.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="transaction tabs-body" id="transaction">
+                                        <h5 class="account__title">
+                                            Пополнение и вывод средств
+                                        </h5>
+                                        <div class="tabs">
+                                            <div class="tabs__nav">
+                                                <button class="tabs__btn tabs__btn--in tabs-btn active"
+                                                    data-tab="#refill">
+                                                    Пополнение баланса
+                                                </button>
+                                                <button class="tabs__btn tabs__btn--out tabs-btn" data-tab="#withdraw ">
+                                                    Вывод средств
+                                                </button>
+                                            </div>
+                                            <div class="tabs__content">
+                                                <div class="tabs__body tabs-body active" id="refill">
+                                                    <h6 class="transaction__title">
+                                                        Вы можете пополнить баланс 2 способами:
+                                                    </h6>
+                                                    <div class="transaction__options">
+                                                        <div class="transaction__option">
+                                                            <div class="transaction__option-title">
+                                                                Биржи
+                                                            </div>
+                                                            <div class="transaction__option-body">
+                                                                <div class="account__group">
+                                                                    <p class="account__text">
+                                                                        Купите токены MARAN на одной из бирж, где
+                                                                        представлен токен и переведите токены по адресу
+                                                                        ниже
+                                                                    </p>
+                                                                </div>
+                                                                <div class="account__group">
+                                                                    <p class="transaction__text copy-text">
+                                                                        0x8f9239100B934e76C5be943A09512a2D3eEc5dB5
+                                                                    </p>
+                                                                    <button class="account__copy copy"
+                                                                        title="Копировать">
+                                                                        <img class="account__copy-icon"
+                                                                            src="images/icons/copy.svg" alt="">
+                                                                    </button>
+                                                                </div>
+                                                                <div class="transaction__qr">
+                                                                    <p class="account__text">
+                                                                        QR code адресса:
+                                                                    </p>
+                                                                    <img class="transaction__qr-img"
+                                                                        src="images/transaction/qr.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="transaction__option">
+                                                            <div class="transaction__option-title">
+                                                                SWAP
+                                                            </div>
+                                                            <div class="transaction__option-body">
+                                                                <p class="transaction__text">
+                                                                    Поменяйте ваши криптоактивы на токен MARAN при
+                                                                    помощи функции SWAP на сайте или в мобильном
+                                                                    приложении
+                                                                </p>
+                                                                <a class="transaction__option-btn" href="#">
+                                                                    Воспользоваться SWAP
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tabs__body tabs-body" id="withdraw">
+                                                    <h6 class="transaction__title">
+                                                        Чтобы вывести ваши средства заполните данные, указанные ниже
+                                                    </h6>
+                                                    <div class="transaction__body">
+                                                        <div class="steps">
+                                                            <div class="steps__progress">
+                                                                <div class="steps__progress-item active">
+                                                                </div>
+                                                                <div class="steps__progress-item">
+                                                                </div>
+                                                                <div class="steps__progress-item">
+                                                                </div>
+                                                                <div class="steps__progress-item">
+                                                                </div>
+                                                            </div>
+                                                            <div class="steps__item active">
+                                                                <div class="steps__group">
+                                                                    <label class="steps__label" for="transemail">
+                                                                        Адрес кошелька для вывода средств
+                                                                    </label>
+                                                                    <input class="steps__input" id="transemail"
+                                                                        type="email" name="email"
+                                                                        placeholder="Введите адрес">
+                                                                </div>
+                                                                <button class="steps__btn next-step">
+                                                                    Далее
+                                                                </button>
+                                                            </div>
+                                                            <div class="steps__item">
+                                                                <div class="steps__group">
+                                                                    <label class="steps__label" for="wallet">
+                                                                        Адрес кошелька для вывода средств
+                                                                    </label>
+                                                                    <div class="steps__control">
+                                                                        <label
+                                                                            class="steps__placeholder placeholder active">
+                                                                            Введите адрес
+                                                                        </label>
+                                                                        <input class="steps__input input" type="text"
+                                                                            id="wallet" name="wallet" value="">
+                                                                        <button class="steps__edit edit active"
+                                                                            title="Редактировать">
+                                                                            <img class="steps__edit-icon"
+                                                                                src="images/icons/edit.svg" alt="">
+                                                                        </button>
+                                                                        <button class="steps__save save">
+                                                                            Изменить
+                                                                        </button>
+                                                                    </div>
+                                                                    <label class="steps__label" for="sum">
+                                                                        Сумма вывода средств
+                                                                    </label>
+                                                                    <input class="steps__input" id="sum" type="number"
+                                                                        name="sum" placeholder="Введите сумму">
+                                                                </div>
+                                                                <button class="steps__btn next-step">
+                                                                    Далее
+                                                                </button>
+                                                            </div>
+                                                            <div class="steps__item">
+                                                                <div class="steps__group">
+                                                                    <label class="steps__label">
+                                                                        Введите закрытый ключ для подтверждения вашей
+                                                                        личности и операции
+                                                                    </label>
+                                                                    <div class="mnemokey active">
+                                                                        <div class="mnemokey__group">
+                                                                            <div class="mnemokey__num">1</div>
+                                                                            <div class="mnemokey__field">
+                                                                                <input class="mnemokey__input"
+                                                                                    type="text" id="1" name="mnemo1">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="mnemokey__group">
+                                                                            <div class="mnemokey__num">2</div>
+                                                                            <div class="mnemokey__field">
+                                                                                <input class="mnemokey__input"
+                                                                                    type="text" id="2" name="mnemo2">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="mnemokey__group">
+                                                                            <div class="mnemokey__num">3</div>
+                                                                            <div class="mnemokey__field">
+                                                                                <input class="mnemokey__input"
+                                                                                    type="text" id="3" name="mnemo3">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="mnemokey__group">
+                                                                            <div class="mnemokey__num">4</div>
+                                                                            <div class="mnemokey__field">
+                                                                                <input class="mnemokey__input"
+                                                                                    type="text" id="4" name="mnemo4">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="mnemokey__group">
+                                                                            <div class="mnemokey__num">5</div>
+                                                                            <div class="mnemokey__field">
+                                                                                <input class="mnemokey__input"
+                                                                                    type="text" id="5" name="mnemo5">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="mnemokey__group">
+                                                                            <div class="mnemokey__num">6</div>
+                                                                            <div class="mnemokey__field">
+                                                                                <input class="mnemokey__input"
+                                                                                    type="text" id="6" name="mnemo6">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="mnemokey__group">
+                                                                            <div class="mnemokey__num">7</div>
+                                                                            <div class="mnemokey__field">
+                                                                                <input class="mnemokey__input"
+                                                                                    type="text" id="7" name="mnemo7">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="mnemokey__group">
+                                                                            <div class="mnemokey__num">8</div>
+                                                                            <div class="mnemokey__field">
+                                                                                <input class="mnemokey__input"
+                                                                                    type="text" id="8" name="mnemo8">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="mnemokey__group">
+                                                                            <div class="mnemokey__num">9</div>
+                                                                            <div class="mnemokey__field">
+                                                                                <input class="mnemokey__input"
+                                                                                    type="text" id="9" name="mnemo9">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="mnemokey__group">
+                                                                            <div class="mnemokey__num">10</div>
+                                                                            <div class="mnemokey__field">
+                                                                                <input class="mnemokey__input"
+                                                                                    type="text" id="10" name="mnemo10">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="mnemokey__group">
+                                                                            <div class="mnemokey__num">11</div>
+                                                                            <div class="mnemokey__field">
+                                                                                <input class="mnemokey__input"
+                                                                                    type="text" id="11" name="mnemo11">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="mnemokey__group">
+                                                                            <div class="mnemokey__num">12</div>
+                                                                            <div class="mnemokey__field">
+                                                                                <input class="mnemokey__input"
+                                                                                    type="text" id="12" name="mnemo12">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <button class="steps__btn next-step">
+                                                                    Далее
+                                                                </button>
+                                                            </div>
+                                                            <div class="steps__item">
+                                                                <div class="steps__group">
+                                                                    <label class="steps__label">
+                                                                        Подтвердите информацию
+                                                                    </label>
+                                                                    <div class="steps__control">
+                                                                        <label
+                                                                            class="steps__placeholder placeholder active"
+                                                                            for="walletConfirm">
+                                                                            0x3Fe227F41A54DC54972e7359D4fC55020bB8AB50
+                                                                        </label>
+                                                                        <input class="steps__input input" type="text"
+                                                                            id="walletConfirm" name="walletConfirm"
+                                                                            value="0x3Fe227F41A54DC54972e7359D4fC55020bB8AB50">
+                                                                        <button class="steps__edit edit active"
+                                                                            title="Редактировать">
+                                                                            <img class="steps__edit-icon"
+                                                                                src="images/icons/edit.svg" alt="">
+                                                                        </button>
+                                                                        <button class="steps__save save">
+                                                                            Изменить
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="steps__control">
+                                                                        <label
+                                                                            class="steps__placeholder placeholder active"
+                                                                            for="sumConfirm">
+                                                                            Сумма вывода средств
+                                                                        </label>
+                                                                        <input class="steps__input input" type="text"
+                                                                            id="sumConfirm" name="sumConfirm"
+                                                                            value="Введите сумму">
+                                                                        <button class="steps__edit edit active"
+                                                                            title="Редактировать">
+                                                                            <img class="steps__edit-icon"
+                                                                                src="images/icons/edit.svg" alt="">
+                                                                        </button>
+                                                                        <button class="steps__save save">
+                                                                            Изменить
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                                <button class="transaction__submit">
+                                                                    Вывести средства
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="history tabs-body" id="history">
+                                        <h5 class="account__title">
+                                            История операций
+                                        </h5>
+                                        <div class="container-sm">
+                                            <div class="tabs">
+                                                <div class="tabs__nav">
+                                                    <div class="tabs__btn tabs-btn active" data-tab="#bets">
+                                                        Пари
+                                                    </div>
+                                                    <div class="tabs__btn tabs-btn" data-tab="#operations">
+                                                        Операции
+                                                    </div>
+                                                    <div class="history__select select">
+                                                        <div class="select__header">
+                                                            <div class="select__current">За неделю</div>
+                                                        </div>
+                                                        <div class="select__body">
+                                                            <div class="select__item">За неделю</div>
+                                                            <div class="select__item">За день</div>
+                                                            <div class="select__item">За месяц</div>
+                                                            <div class="select__item">За год</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tabs__content">
+                                                    <div class="tabs__body tabs-body active" id="bets">
+                                                        <div class="history__table">
+                                                            <div class="history__head">
+                                                                <div class="history__col">
+                                                                    Дата
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    Время
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    Номер купона
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    Тип пари
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    Сумма
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    Результат
+                                                                </div>
+                                                            </div>
+                                                            <div class="history__row">
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                            </div>
+                                                            <div class="history__row">
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                            </div>
+                                                            <div class="history__row">
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                            </div>
+                                                            <div class="history__row">
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tabs__body tabs-body" id="operations">
+                                                        <div class="filter">
+                                                            <button class="filter__open">
+                                                                <span>Фильтр</span>
+                                                                <img class="filter__icon" src="images/icons/filters.svg"
+                                                                    alt="">
+                                                            </button>
+                                                            <div class="history__tags tags">
+                                                                <img class="history__tags-icon"
+                                                                    src="images/icons/filters.svg" alt="">
+                                                                <button class="history__tag tag active">
+                                                                    Результат
+                                                                </button>
+                                                                <button class="history__tag tag">
+                                                                    Не рассчитана
+                                                                </button>
+                                                                <button class="history__tag tag">
+                                                                    Выигрыш
+                                                                </button>
+                                                                <button class="history__tag tag">
+                                                                    Проигрыш
+                                                                </button>
+                                                                <button class="history__tag tag">
+                                                                    Отмена
+                                                                </button>
+                                                                <button class="history__tag tag">
+                                                                    Возврат
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="history__table">
+                                                            <div class="history__head">
+                                                                <div class="history__col">
+                                                                    Дата
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    Время
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    Номер купона
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    Тип пари
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    Сумма
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    Результат
+                                                                </div>
+                                                            </div>
+                                                            <div class="history__row">
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                            </div>
+                                                            <div class="history__row">
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                            </div>
+                                                            <div class="history__row">
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                            </div>
+                                                            <div class="history__row">
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                                <div class="history__col">
+                                                                    1.7
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bonus tabs-body" id="bonus">
+                                        <div class="container-sm">
+                                            <div class="account__title">
+                                                Бонусы и Акции
+                                            </div>
+                                            <div class="bonus__body">
+                                                <div class="bonus__title">
+                                                    Промоколды
+                                                </div>
+                                                <div class="bonus__group">
+                                                    <label class="bonus__label" for="promocode">
+                                                        Ввести промокод
+                                                    </label>
+                                                    <input class="bonus__input" id="promocode" name="promocode"
+                                                        type="text" placeholder="Введите промокод">
+                                                    <button class="bonus__btn">
+                                                        Применить
+                                                    </button>
+                                                </div>
+                                                <div class="stocks">
+                                                    <div class="stocks__title">Акции</div>
+                                                    <div class="stocks__items">
+                                                        <div class="stocks__item">
+                                                            <img class="stocks__img" src="images/bonus/bonus.jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="stocks__item">
+                                                            <img class="stocks__img" src="images/bonus/bonus.jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="stocks__item">
+                                                            <img class="stocks__img" src="images/bonus/bonus.jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="stocks__item">
+                                                            <img class="stocks__img" src="images/bonus/bonus.jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="stocks__item">
+                                                            <img class="stocks__img" src="images/bonus/bonus.jpg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="favorites tabs-body" id="favorites">
+                                        <div class="account__title">
+                                            Избранное
+                                        </div>
+                                        <div class="tabs">
+                                            <div class="container-lg">
+                                                <div class="tabs__inner">
+                                                    <div class="tabs__nav">
+                                                        <button class="tabs__btn tabs__btn--lg tabs-btn active"
+                                                            data-tab="#exodus">
+                                                            Исходы
+                                                        </button>
+                                                        <button class="tabs__btn tabs__btn--lg tabs-btn"
+                                                            data-tab="#handicap">
+                                                            Форы
+                                                        </button>
+                                                        <button class="tabs__btn tabs__btn--lg tabs-btn"
+                                                            data-tab="#total">
+                                                            Тоталы
+                                                        </button>
+                                                    </div>
+                                                    <div class="tabs__content">
+                                                        <div class="tabs__body tabs-body active" id="exodus">
+                                                            <div class="bets">
+                                                                <div class="bets__body">
+                                                                    <div class="bets__table">
+                                                                        <div class="bets__game">
+                                                                            <div class="bets__info">
+                                                                                <button class="bets__btn">
+                                                                                    <img class="bets__btn-icon"
+                                                                                        src="images/icons/star-yellow.svg"
+                                                                                        alt="">
+                                                                                </button>
+                                                                                <div class="bets__info-content">
+                                                                                    <span class="bets__date">6 июля,
+                                                                                        20:00</span>
+                                                                                    <div class="bets__players">
+                                                                                        <div class="bets__first">
+                                                                                            Нигерия
+                                                                                        </div>
+                                                                                        <div class="bets__second">
+                                                                                            Австрия
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="bets__results">
+                                                                                <div class="bets__time">
+                                                                                    Основное время
+                                                                                </div>
+                                                                                <div class="bets__res">
+                                                                                    <div class="bets__winner">
+                                                                                        Нигерия
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="bets__coefficient coefficient">
+                                                                                        1.7
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="bets__res">
+                                                                                    <div class="bets__no-winner">
+                                                                                        Ничья
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="bets__coefficient coefficient">
+                                                                                        -
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="bets__res">
+                                                                                    <div class="bets__winner">
+                                                                                        Австрия
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="bets__coefficient coefficient">
+                                                                                        1.3
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="bets__game">
+                                                                            <div class="bets__info">
+                                                                                <button class="bets__btn">
+                                                                                    <img class="bets__btn-icon"
+                                                                                        src="images/icons/star-yellow.svg"
+                                                                                        alt="">
+                                                                                </button>
+                                                                                <div class="bets__info-content">
+                                                                                    <span class="bets__date">6 июля,
+                                                                                        20:00</span>
+                                                                                    <div class="bets__players">
+                                                                                        <div class="bets__first">
+                                                                                            Нигерия
+                                                                                        </div>
+                                                                                        <div class="bets__second">
+                                                                                            Австрия
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="bets__results">
+                                                                                <div class="bets__time">
+                                                                                    Основное время
+                                                                                </div>
+                                                                                <div class="bets__res">
+                                                                                    <div class="bets__winner">
+                                                                                        Нигерия
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="bets__coefficient coefficient">
+                                                                                        1.7
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="bets__res">
+                                                                                    <div class="bets__no-winner">
+                                                                                        Ничья
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="bets__coefficient coefficient">
+                                                                                        -
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="bets__res">
+                                                                                    <div class="bets__winner">
+                                                                                        Австрия
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="bets__coefficient coefficient">
+                                                                                        1.3
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="bets__game">
+                                                                            <div class="bets__info">
+                                                                                <button class="bets__btn">
+                                                                                    <img class="bets__btn-icon"
+                                                                                        src="images/icons/star-yellow.svg"
+                                                                                        alt="">
+                                                                                </button>
+                                                                                <div class="bets__info-content">
+                                                                                    <span class="bets__date">6 июля,
+                                                                                        20:00</span>
+                                                                                    <div class="bets__players">
+                                                                                        <div class="bets__first">
+                                                                                            Нигерия
+                                                                                        </div>
+                                                                                        <div class="bets__second">
+                                                                                            Австрия
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="bets__results">
+                                                                                <div class="bets__time">
+                                                                                    Основное время
+                                                                                </div>
+                                                                                <div class="bets__res">
+                                                                                    <div class="bets__winner">
+                                                                                        Нигерия
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="bets__coefficient coefficient">
+                                                                                        1.7
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="bets__res">
+                                                                                    <div class="bets__no-winner">
+                                                                                        Ничья
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="bets__coefficient coefficient">
+                                                                                        -
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="bets__res">
+                                                                                    <div class="bets__winner">
+                                                                                        Австрия
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="bets__coefficient coefficient">
+                                                                                        1.3
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div> <!-- /.bets__table -->
+                                                                </div>
+                                                            </div> <!-- /.bets -->
+                                                        </div> <!-- /.tabs__body -->
+                                                        <div class="tabs__body tabs-body" id="handicap">
+                                                            <div class="bets">
+                                                                <div class="bets__body">
+                                                                    <div class="bets__table">
+                                                                        <div class="bets__game">
+                                                                            <div class="bets__info">
+                                                                                <button class="bets__btn">
+                                                                                    <img class="bets__btn-icon"
+                                                                                        src="images/icons/star-yellow.svg"
+                                                                                        alt="">
+                                                                                </button>
+                                                                                <div class="bets__info-content">
+                                                                                    <span class="bets__date">6 июля,
+                                                                                        20:00</span>
+                                                                                    <div class="bets__players">
+                                                                                        <div class="bets__first">
+                                                                                            Нигерия
+                                                                                        </div>
+                                                                                        <div class="bets__second">
+                                                                                            Австрия
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="bets__results">
+                                                                                <div class="bets__time">
+                                                                                    Основное время
+                                                                                </div>
+                                                                                <div class="bets__res">
+                                                                                    <div class="bets__winner">
+                                                                                        Нигерия
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="bets__coefficient coefficient">
+                                                                                        1.7
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="bets__res">
+                                                                                    <div class="bets__winner">
+                                                                                        Австрия
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="bets__coefficient coefficient">
+                                                                                        1.3
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="bets__game">
+                                                                            <div class="bets__info">
+                                                                                <button class="bets__btn">
+                                                                                    <img class="bets__btn-icon"
+                                                                                        src="images/icons/star-yellow.svg"
+                                                                                        alt="">
+                                                                                </button>
+                                                                                <div class="bets__info-content">
+                                                                                    <span class="bets__date">6 июля,
+                                                                                        20:00</span>
+                                                                                    <div class="bets__players">
+                                                                                        <div class="bets__first">
+                                                                                            Нигерия
+                                                                                        </div>
+                                                                                        <div class="bets__second">
+                                                                                            Австрия
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="bets__results">
+                                                                                <div class="bets__time">
+                                                                                    Основное время
+                                                                                </div>
+                                                                                <div class="bets__res">
+                                                                                    <div class="bets__winner">
+                                                                                        Нигерия
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="bets__coefficient coefficient">
+                                                                                        1.7
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="bets__res">
+                                                                                    <div class="bets__winner">
+                                                                                        Австрия
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="bets__coefficient coefficient">
+                                                                                        1.3
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="bets__game">
+                                                                            <div class="bets__info">
+                                                                                <button class="bets__btn">
+                                                                                    <img class="bets__btn-icon"
+                                                                                        src="images/icons/star-yellow.svg"
+                                                                                        alt="">
+                                                                                </button>
+                                                                                <div class="bets__info-content">
+                                                                                    <span class="bets__date">6 июля,
+                                                                                        20:00</span>
+                                                                                    <div class="bets__players">
+                                                                                        <div class="bets__first">
+                                                                                            Нигерия
+                                                                                        </div>
+                                                                                        <div class="bets__second">
+                                                                                            Австрия
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="bets__results">
+                                                                                <div class="bets__time">
+                                                                                    Основное время
+                                                                                </div>
+                                                                                <div class="bets__res">
+                                                                                    <div class="bets__winner">
+                                                                                        Нигерия
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="bets__coefficient coefficient">
+                                                                                        1.7
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="bets__res">
+                                                                                    <div class="bets__winner">
+                                                                                        Австрия
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="bets__coefficient coefficient">
+                                                                                        1.3
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div> <!-- /.bets__table -->
+                                                                </div>
+                                                            </div> <!-- /.bets -->
+                                                        </div> <!-- /.tabs__body -->
+                                                        <div class="tabs__body tabs-body" id="total">
+                                                            <div class="bets">
+                                                                <div class="bets__table">
+                                                                    <div class="bets__game">
+                                                                        <div class="bets__info">
+                                                                            <button class="bets__btn">
+                                                                                <img class="bets__btn-icon"
+                                                                                    src="images/icons/star-yellow.svg"
+                                                                                    alt="">
+                                                                            </button>
+                                                                            <div class="bets__info-content">
+                                                                                <span class="bets__date">6 июля,
+                                                                                    20:00</span>
+                                                                                <div class="bets__players">
+                                                                                    <div class="bets__first">
+                                                                                        Нигерия
+                                                                                    </div>
+                                                                                    <div class="bets__second">
+                                                                                        Австрия
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="bets__results">
+                                                                            <div class="total">
+                                                                                <div class="total__item">
+                                                                                    <div class="total__count">
+                                                                                        Тотал матча 2
+                                                                                    </div>
+                                                                                    <div class="total__more">
+                                                                                        <div class="total__res">Б</div>
+                                                                                        <div
+                                                                                            class="total__coefficient  coefficient">
+                                                                                            <span
+                                                                                                class="total__coefficient-count">
+                                                                                                2
+                                                                                            </span>
+                                                                                            1.3
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="total__less">
+                                                                                        <div class="total__res">М</div>
+                                                                                        <div
+                                                                                            class="total__coefficient coefficient">
+                                                                                            <span
+                                                                                                class="total__coefficient-count">
+                                                                                                2
+                                                                                            </span>
+                                                                                            1.3
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="total__item">
+                                                                                    <div class="total__count">
+                                                                                        Тотал матча 2.5
+                                                                                    </div>
+                                                                                    <div class="total__more">
+                                                                                        <div class="total__res">Б</div>
+                                                                                        <div
+                                                                                            class="total__coefficient coefficient">
+                                                                                            <span
+                                                                                                class="total__coefficient-count">
+                                                                                                2.5
+                                                                                            </span>
+                                                                                            1.7
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="total__less">
+                                                                                        <div class="total__res">М</div>
+                                                                                        <div
+                                                                                            class="total__coefficient coefficient">
+                                                                                            <span
+                                                                                                class="total__coefficient-count">
+                                                                                                2.5
+                                                                                            </span>
+                                                                                            1.7
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="total__item">
+                                                                                    <div class="total__count">
+                                                                                        Тотал матча 2.5
+                                                                                    </div>
+                                                                                    <div class="total__more">
+                                                                                        <div class="total__res">Б</div>
+                                                                                        <div
+                                                                                            class="total__coefficient coefficient">
+                                                                                            <span
+                                                                                                class="total__coefficient-count">
+                                                                                                2.5
+                                                                                            </span>
+                                                                                            1.7
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="total__less">
+                                                                                        <div class="total__res">М</div>
+                                                                                        <div
+                                                                                            class="total__coefficient coefficient">
+                                                                                            <span
+                                                                                                class="total__coefficient-count">
+                                                                                                2.5
+                                                                                            </span>
+                                                                                            1.7
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="bets__game">
+                                                                        <div class="bets__info">
+                                                                            <button class="bets__btn">
+                                                                                <img class="bets__btn-icon"
+                                                                                    src="images/icons/star-yellow.svg"
+                                                                                    alt="">
+                                                                            </button>
+                                                                            <div class="bets__info-content">
+                                                                                <span class="bets__date">6 июля,
+                                                                                    20:00</span>
+                                                                                <div class="bets__players">
+                                                                                    <div class="bets__first">
+                                                                                        Нигерия
+                                                                                    </div>
+                                                                                    <div class="bets__second">
+                                                                                        Австрия
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="bets__results">
+                                                                            <div class="total">
+                                                                                <div class="total__item">
+                                                                                    <div class="total__count">
+                                                                                        Тотал матча 2
+                                                                                    </div>
+                                                                                    <div class="total__more">
+                                                                                        <div class="total__res">Б</div>
+                                                                                        <div
+                                                                                            class="total__coefficient coefficient">
+                                                                                            <span
+                                                                                                class="total__coefficient-count">
+                                                                                                2
+                                                                                            </span>
+                                                                                            1.3
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="total__less">
+                                                                                        <div class="total__res">М</div>
+                                                                                        <div
+                                                                                            class="total__coefficient coefficient">
+                                                                                            <span
+                                                                                                class="total__coefficient-count">
+                                                                                                2
+                                                                                            </span>
+                                                                                            1.3
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="total__item">
+                                                                                    <div class="total__count">
+                                                                                        Тотал матча 2.5
+                                                                                    </div>
+                                                                                    <div class="total__more">
+                                                                                        <div class="total__res">Б</div>
+                                                                                        <div
+                                                                                            class="total__coefficient coefficient">
+                                                                                            <span
+                                                                                                class="total__coefficient-count">
+                                                                                                2.5
+                                                                                            </span>
+                                                                                            1.7
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="total__less">
+                                                                                        <div class="total__res">М</div>
+                                                                                        <div
+                                                                                            class="total__coefficient coefficient">
+                                                                                            <span
+                                                                                                class="total__coefficient-count">
+                                                                                                2.5
+                                                                                            </span>
+                                                                                            1.7
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="total__item">
+                                                                                    <div class="total__count">
+                                                                                        Тотал матча 2.5
+                                                                                    </div>
+                                                                                    <div class="total__more">
+                                                                                        <div class="total__res">Б</div>
+                                                                                        <div
+                                                                                            class="total__coefficient coefficient">
+                                                                                            <span
+                                                                                                class="total__coefficient-count">
+                                                                                                2.5
+                                                                                            </span>
+                                                                                            1.7
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="total__less">
+                                                                                        <div class="total__res">М</div>
+                                                                                        <div
+                                                                                            class="total__coefficient coefficient">
+                                                                                            <span
+                                                                                                class="total__coefficient-count">
+                                                                                                2.5
+                                                                                            </span>
+                                                                                            1.7
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="bets__game">
+                                                                        <div class="bets__info">
+                                                                            <button class="bets__btn">
+                                                                                <img class="bets__btn-icon"
+                                                                                    src="images/icons/star-yellow.svg"
+                                                                                    alt="">
+                                                                            </button>
+                                                                            <div class="bets__info-content">
+                                                                                <span class="bets__date">6 июля,
+                                                                                    20:00</span>
+                                                                                <div class="bets__players">
+                                                                                    <div class="bets__first">
+                                                                                        Нигерия
+                                                                                    </div>
+                                                                                    <div class="bets__second">
+                                                                                        Австрия
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="bets__results">
+                                                                            <div class="total">
+                                                                                <div class="total__item">
+                                                                                    <div class="total__count">
+                                                                                        Тотал матча 2
+                                                                                    </div>
+                                                                                    <div class="total__more">
+                                                                                        <div class="total__res">Б</div>
+                                                                                        <div
+                                                                                            class="total__coefficient coefficient">
+                                                                                            <span
+                                                                                                class="total__coefficient-count">
+                                                                                                2
+                                                                                            </span>
+                                                                                            1.3
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="total__less">
+                                                                                        <div class="total__res">М</div>
+                                                                                        <div
+                                                                                            class="total__coefficient coefficient">
+                                                                                            <span
+                                                                                                class="total__coefficient-count">
+                                                                                                2
+                                                                                            </span>
+                                                                                            1.3
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="total__item">
+                                                                                    <div class="total__count">
+                                                                                        Тотал матча 2.5
+                                                                                    </div>
+                                                                                    <div class="total__more">
+                                                                                        <div class="total__res">Б</div>
+                                                                                        <div
+                                                                                            class="total__coefficient coefficient">
+                                                                                            <span
+                                                                                                class="total__coefficient-count">
+                                                                                                2.5
+                                                                                            </span>
+                                                                                            1.7
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="total__less">
+                                                                                        <div class="total__res">М</div>
+                                                                                        <div
+                                                                                            class="total__coefficient coefficient">
+                                                                                            <span
+                                                                                                class="total__coefficient-count">
+                                                                                                2.5
+                                                                                            </span>
+                                                                                            1.7
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="total__item">
+                                                                                    <div class="total__count">
+                                                                                        Тотал матча 2.5
+                                                                                    </div>
+                                                                                    <div class="total__more">
+                                                                                        <div class="total__res">Б</div>
+                                                                                        <div
+                                                                                            class="total__coefficient coefficient">
+                                                                                            <span
+                                                                                                class="total__coefficient-count">
+                                                                                                2.5
+                                                                                            </span>
+                                                                                            1.7
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="total__less">
+                                                                                        <div class="total__res">М</div>
+                                                                                        <div
+                                                                                            class="total__coefficient coefficient">
+                                                                                            <span
+                                                                                                class="total__coefficient-count">
+                                                                                                2.5
+                                                                                            </span>
+                                                                                            1.7
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div> <!-- /.bets__table -->
+                                                            </div> <!-- /.bets -->
+                                                        </div> <!-- /.tabs__body -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container-lg">
+                <div class="footer__inner">
+                    <div class="footer__row">
+                        <div class="footer__col">
+                            <h6 class="footer__title">
+                                Скачайте приложение
+                            </h6>
+                            <div class="footer__apps">
+                                <a class="footer__app-link" href="#">
+                                    <img class="footer__img" src="images/footer/g-play.svg" alt="">
+                                </a>
+                                <a class="footer__app-link" href="#">
+                                    <img class="footer__img" src="images/footer/app-store.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="footer__lg">
+                                <a class="footer__email" href="mailto:info@maranbet.com ">info@maranbet.com</a>
+                                <p class="footer__copy">
+                                    © MARAN Global INC. 2021
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer__col">
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">О компании</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Контакты</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Правила игры</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Акции</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">SWAP</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Политика Конфиденциальности</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Условия Использования</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Как получить MARAN?</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__col">
+                            <h6 class="footer__title footer__title--right">
+                                Мы в социальных сетях
+                            </h6>
+                            <ul class="footer__soc">
+                                <li class="footer__soc-item">
+                                    <a class="footer__soc-link" href="#">
+                                        <img src="images/icons/twitter.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="footer__soc-item">
+                                    <a class="footer__soc-link" href="#">
+                                        <img src="images/icons/fb.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="footer__soc-item">
+                                    <a class="footer__soc-link" href="#">
+                                        <img src="images/icons/insta.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="footer__soc-item">
+                                    <a class="footer__soc-link" href="#">
+                                        <img src="images/icons/tg.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="footer__soc-item">
+                                    <a class="footer__soc-link" href="#">
+                                        <img src="images/icons/medium.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__sm">
+                        <p class="footer__copy">
+                            © MARAN Global INC. 2021
+                        </p>
+                        <a class="footer__email" href="mailto:info@maranbet.com ">info@maranbet.com</a>
+                    </div>
+                </div>
+            </div> <!-- /.container -->
+        </footer>
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
